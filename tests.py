@@ -19,7 +19,7 @@ class TestPokemonMain(unittest.TestCase):
     @unittest.mock.patch('main.PokemonService', MockPokemonService)
 
     def test_main(self):
-        # main()
+        main()
         with open('report_template.html') as f:
             result = f.read()
             self.assertIn('bulbasaure', result)
