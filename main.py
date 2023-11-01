@@ -10,7 +10,7 @@ def main():
     report_generator = PokemonReport()
 
     # Get Pokemon information
-    pokemon_name = "pikachu"
+    pokemon_name = "bulbasaur"
     pokemon_info = pokemon_service.get_pokemon_info(pokemon_name)
 
     if pokemon_info:
@@ -27,9 +27,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-new_abilities = ['overgrow', 'power']
-abilities = [{'key':{'key':'value'}}, {'key':{'key':'value'}}]
-for ability in  abilities:
-    new_abilities.append(', '.join(ability['ability']['name']))
 
 
